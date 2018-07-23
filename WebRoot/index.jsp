@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -21,6 +21,32 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    This is my JSP page. <br>
+    <form name="frm" action="/spring/byyy" method="post">
+    	<input type="text" name="name"/>
+    	
+    	<input type="text" name="byte1"/>
+    	<input type="text" name="short1"/>
+    	<input type="text" name="int1"/>
+    	<input type="text" name="long1"/>
+    	
+    	<input type="text" name="float1"/>
+    	<input type="text" name="double1"/>
+    	
+    	<input type="text" name="char1"/>
+    	<input type="text" name="boolean1"/>
+    	
+    	<input type="text" name="byte2"/>
+    	<input type="text" name="short2"/>
+    	<input type="text" name="int2"/>
+    	<input type="text" name="long2"/>
+    	
+    	<input type="text" name="float2"/>
+    	<input type="text" name="double2"/>
+    	
+    	<input type="text" name="char2"/>
+    	<input type="text" name="boolean2"/>
+    	
+    	<input type="button" name="" value="提交" onclick="frm.submit()">
+    </form>
   </body>
 </html>
